@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="Google-Chrome">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 10 Coding Assignment</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="node_modules/jquery/distjquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</head>
+
+<body>
+
+    <div class="text-primary"> <!--This is the header-->
+        <h1 class="text-center">Vote for your favorite car picture!</h1>
+    </div>
+
+    <div class="badge bg-primary text-wrap" style="width: 100%;"> <!--This is the form-->
+        <label class="fs-5" for="add-name">Select the photo number and enter the car model in the photo you choose!</label>
+        <div class="container">
+        <select id="picture-select" class="form-select form-select-sm fw-bold" aria-label=".form-select-sm">
+            <option class="fw-bold" selected>Select your favorite picture</option>
+            <option class="fw-bold" value="1">#1</option>
+            <option class="fw-bold" value="2">#2</option>
+            <option class="fw-bold" value="3">#3</option>
+            <option class="fw-bold" value="4">#4</option>
+        </select>
+        </div>
+    <div class="container">
+    <div class="input-group input-group-sm mb-3"> <!--Allowing for form input-->
+        <span class="input-group-text"><button id="add-name-button" type="button" class="btn btn-primary">Add Name</button></span>
+        <input id="add-name" type="text" class="form-control fst-italic" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+    </div>
+    </div>
+</div> <!--form and input are contained together with an outer div-->
+
+<div class="container text-center"> <!--This a grid to layout the images and more-->
+    <div class="col fw-bold">#1<img src="Images\Audi A6.jpg" class="img-fluid" alt="Sharp Black Audi A6"></div>
+    <div class="col fw-bold">#2<img src="Images\BMW_G20_IMG_0167.jpg" class="img-fluid" alt="A BMW 330"></div>
+    <div class="col fw-bold">#3<img src="Images\Black Chevy Camaro.jpg" class="img-fluid" alt="A Black Chevy Camaro"></div>
+    <div class="col fw-bold">#4<img src="Images\Dodge Challenger.jpg" class="img-fluid" alt="Black Dodge Challenger"></div>
+</div>
+<br>
+<table id="name" class="table table-primary table-sm"> <!--This is a table to display the input entered by the user-->
+<tr>
+    <th scope="col">Picture #</th>
+    <th scope="col">Name</th>
+    <th scope="col"></th>
+</tr>
+</table>
+</div>
+
+<script src="Week 10 Coding.js"></script>
+
+</body>
+</html>
